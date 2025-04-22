@@ -6,9 +6,31 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Evodux | Soluções Digitais Baseadas em Tecnologia",
+  title: {
+    template: "%s | Evodux",
+    default: "Evodux | Soluções Digitais Baseadas em Tecnologia",
+  },
   description:
     "Soluções digitais baseadas em tecnologia para acelerar seu negócio",
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "https://www.evodux.com.br/",
+    siteName: "Evodux",
+    images: [
+      {
+        url: "https://www.evodux.com.br/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Evodux Soluções Digitais",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@evodux",
+    creator: "@evodux",
+  },
 };
 
 export default function RootLayout({
@@ -70,7 +92,7 @@ export default function RootLayout({
             </div>
           </div>
         </header>
-        <main className="pt-20">{children}</main>
+        <main className="pt-16">{children}</main>
         <footer className="bg-gray-900 text-white py-12">
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col md:flex-row md:justify-between">

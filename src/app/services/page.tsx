@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Serviços | Evodux",
+  title: "Serviços",
   description:
     "Conheça os serviços oferecidos pela Evodux: desenvolvimento de produtos digitais, integração de sistemas e consultoria especializada.",
 };

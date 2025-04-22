@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contato | Evodux",
+  title: "Contato",
   description:
     "Entre em contato com a Evodux para discutir seu projeto e obter soluções digitais personalizadas para seu negócio.",
 };
