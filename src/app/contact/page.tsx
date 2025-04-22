@@ -83,7 +83,7 @@ export default function Contact() {
               </p>
 
               <div className="space-y-6">
-                <div className="flex items-start">
+                <div className="flex items-start items-center">
                   <div className="flex-shrink-0 bg-indigo-100 rounded-full p-3 mr-4">
                     <svg
                       className="h-6 w-6 text-indigo-600"
@@ -107,7 +107,7 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start">
+                <div className="flex items-start items-center">
                   <div className="flex-shrink-0 bg-indigo-100 rounded-full p-3 mr-4">
                     <svg
                       className="h-6 w-6 text-indigo-600"
@@ -131,7 +131,7 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start">
+                <div className="flex items-start items-center">
                   <div className="flex-shrink-0 bg-indigo-100 rounded-full p-3 mr-4">
                     <svg
                       className="h-6 w-6 text-indigo-600"
