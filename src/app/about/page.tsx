@@ -34,20 +34,32 @@ export default function About() {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
                 Nossa História
               </h2>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-gray-700 mb-4">
                 A Evodux nasceu da visão de criar soluções tecnológicas que
-                realmente transformam negócios. Fundada por especialistas em
-                tecnologia apaixonados por inovação, nossa empresa tem como
-                missão oferecer produtos digitais de alta qualidade que
-                impulsionam o crescimento de nossos clientes.
+                realmente transformam negócios. Fundada por especialistas
+                apaixonados por tecnologia e inovação, buscamos desde o início a
+                excelência em cada projeto.
               </p>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-gray-700 mb-4">
+                Nossa missão é oferecer produtos digitais de alta qualidade que
+                impulsionam o crescimento de nossos clientes. Acreditamos que a
+                tecnologia deve ser uma alavanca para o sucesso empresarial.
+              </p>
+              <p className="text-lg text-gray-700 mb-4">
                 Ao longo dos anos, desenvolvemos uma abordagem única que combina
                 expertise técnica com um profundo entendimento das necessidades
-                de negócio, resultando em soluções que não apenas resolvem
-                problemas imediatos, mas também estabelecem bases sólidas para o
-                futuro.
+                de negócio de cada cliente.
               </p>
+              <p className="text-lg text-gray-700 mb-6">
+                Nossas soluções não apenas resolvem problemas imediatos, mas
+                também estabelecem bases sólidas para o crescimento futuro,
+                garantindo competitividade no mercado digital.
+              </p>
+              <div className="mt-8">
+                <Link href="/services" className="btn btn-primary mr-4">
+                  Conheça Nossos Serviços
+                </Link>
+              </div>
             </div>
             <div className="flex-1">
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-2xl">
@@ -83,29 +95,33 @@ export default function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow border-t-4 border-indigo-600">
-              <div className="text-indigo-600 mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-12 w-12"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
-                  />
-                </svg>
+              <div className="flex items-center mb-4">
+                <div className="text-indigo-600 mr-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-12 w-12"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">
+                  Inovação
+                </h3>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Inovação</h3>
               <p className="text-gray-700">
                 Estamos constantemente buscando novas tecnologias e abordagens
                 para oferecer soluções que antecipam as necessidades do mercado
@@ -113,23 +129,27 @@ export default function About() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow border-t-4 border-indigo-600">
-              <div className="text-indigo-600 mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-12 w-12"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  />
-                </svg>
+              <div className="flex items-center mb-4">
+                <div className="text-indigo-600 mr-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-12 w-12"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">
+                  Agilidade
+                </h3>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Agilidade</h3>
               <p className="text-gray-700">
                 Adotamos metodologias ágeis para entregar valor rapidamente,
                 adaptando-nos às mudanças e garantindo que nossos clientes
@@ -137,29 +157,39 @@ export default function About() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow border-t-4 border-indigo-600">
-              <div className="text-indigo-600 mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-12 w-12"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
-                </svg>
+              <div className="flex items-center mb-4">
+                <div className="text-indigo-600 mr-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-12 w-12"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">
+                  Confiabilidade
+                </h3>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Confiabilidade</h3>
               <p className="text-gray-700">
                 Construímos relações duradouras baseadas em transparência e
                 resultados consistentes, honrando nossos compromissos e
                 oferecendo um suporte contínuo aos nossos clientes.
               </p>
             </div>
+          </div>
+
+          <div className="text-center mt-16">
+            <Link href="/services" className="btn btn-primary">
+              Conheça Nossos Serviços
+            </Link>
           </div>
         </div>
       </section>
@@ -174,12 +204,20 @@ export default function About() {
             Estamos prontos para entender seu negócio e desenvolver soluções
             digitais que impulsionem seu crescimento.
           </p>
-          <Link
-            href="/contact"
-            className="btn bg-white text-indigo-600 hover:bg-indigo-50 px-8 py-3"
-          >
-            Entre em Contato
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/contact"
+              className="btn bg-white text-indigo-600 hover:bg-indigo-50 px-8 py-3"
+            >
+              Entre em Contato
+            </Link>
+            <Link
+              href="/services"
+              className="btn bg-transparent text-white border border-white hover:bg-white/10 px-8 py-3"
+            >
+              Conheça Nossos Serviços
+            </Link>
+          </div>
         </div>
       </section>
     </>
