@@ -148,7 +148,7 @@ export default function Services() {
                       />
                     </svg>
                   </div>
-                  <h4 className="text-xl font-semibold text-center mb-4">
+                  <h4 className="text-xl font-semibold text-center mb-4 text-gray-900">
                     Desenvolvimento Ágil
                   </h4>
                   <p className="text-gray-600 text-center">
@@ -182,7 +182,7 @@ export default function Services() {
                       />
                     </svg>
                   </div>
-                  <h4 className="text-xl font-semibold text-center mb-4">
+                  <h4 className="text-xl font-semibold text-center mb-4 text-gray-900">
                     Integração Perfeita
                   </h4>
                   <p className="text-gray-600 text-center">
@@ -389,7 +389,7 @@ export default function Services() {
                       />
                     </svg>
                   </div>
-                  <h4 className="text-xl font-semibold text-center mb-4">
+                  <h4 className="text-xl font-semibold text-center mb-4 text-gray-900">
                     Expertise Técnica
                   </h4>
                   <p className="text-gray-600 text-center">

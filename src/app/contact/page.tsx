@@ -73,7 +73,9 @@ export default function Contact() {
         <div className="container">
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Entre em Contato</h2>
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">
+                Entre em Contato
+              </h2>
               <p className="text-lg text-gray-700 mb-8">
                 Preencha o formulário ao lado ou use os dados de contato abaixo
                 para falar conosco. Estamos ansiosos para entender seu projeto e
@@ -98,7 +100,9 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1">Email</h3>
+                    <h3 className="text-lg font-semibold mb-1 text-gray-900">
+                      Email
+                    </h3>
                     <p className="text-gray-600">contato@evodux.com</p>
                   </div>
                 </div>
@@ -120,7 +124,9 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1">Telefone</h3>
+                    <h3 className="text-lg font-semibold mb-1 text-gray-900">
+                      Telefone
+                    </h3>
                     <p className="text-gray-600">(11) 9999-9999</p>
                   </div>
                 </div>
@@ -148,7 +154,9 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1">Endereço</h3>
+                    <h3 className="text-lg font-semibold mb-1 text-gray-900">
+                      Endereço
+                    </h3>
                     <p className="text-gray-600">São Paulo, SP - Brasil</p>
                   </div>
                 </div>
@@ -178,7 +186,7 @@ export default function Contact() {
                         />
                       </svg>
                     </div>
-                    <h3 className="text-2xl font-bold mb-4">
+                    <h3 className="text-2xl font-bold mb-4 text-gray-900">
                       Mensagem Enviada!
                     </h3>
                     <p className="text-gray-600 mb-6">

@@ -108,7 +108,7 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">
                 Desenvolvimento de Produtos Digitais
               </h3>
               <p className="text-gray-600 mb-4">
@@ -139,7 +139,7 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">
                 Integração de Sistemas
               </h3>
               <p className="text-gray-600 mb-4">
@@ -170,7 +170,7 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">
                 Consultoria Especializada
               </h3>
               <p className="text-gray-600 mb-4">

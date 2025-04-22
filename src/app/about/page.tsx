@@ -31,7 +31,7 @@ export default function About() {
         <div className="container">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
                 Nossa História
               </h2>
               <p className="text-lg text-gray-700 mb-6">
@@ -70,7 +70,7 @@ export default function About() {
       <section className="section bg-gray-50">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
               Nossa Missão e Valores
             </h2>
             <p className="text-lg text-gray-700">
@@ -105,7 +105,7 @@ export default function About() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-4">Inovação</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Inovação</h3>
               <p className="text-gray-700">
                 Estamos constantemente buscando novas tecnologias e abordagens
                 para oferecer soluções que antecipam as necessidades do mercado
@@ -129,7 +129,7 @@ export default function About() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-4">Agilidade</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Agilidade</h3>
               <p className="text-gray-700">
                 Adotamos metodologias ágeis para entregar valor rapidamente,
                 adaptando-nos às mudanças e garantindo que nossos clientes
@@ -153,7 +153,7 @@ export default function About() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-4">Confiabilidade</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Confiabilidade</h3>
               <p className="text-gray-700">
                 Construímos relações duradouras baseadas em transparência e
                 resultados consistentes, honrando nossos compromissos e
