@@ -27,18 +27,25 @@ export default function Services() {
       </section>
 
       {/* Services Overview */}
-      <section className="section bg-white">
-        <div className="container">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Como Podemos Ajudar
-            </h2>
-            <p className="text-lg text-gray-700">
-              Na Evodux, oferecemos um conjunto completo de serviços digitais
-              para atender às diversas necessidades do seu negócio. Nossa
-              abordagem é sempre personalizada, focando em resultados concretos.
-            </p>
-          </div>
+<section className="section bg-white">
+  <div className="container">
+    <div className="max-w-3xl mx-auto text-center mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Como Podemos Ajudar</h2>
+      <p className="text-lg text-gray-700">
+        Na Evodux, oferecemos um conjunto completo de serviços digitais para atender às diversas necessidades do seu negócio. Nossa abordagem é sempre personalizada, focando em resultados concretos.
+      </p>
+    </div>
+
+    {/* CTA Intermediária */}
+    <div className="bg-indigo-50 border border-indigo-100 rounded-lg p-8 text-center shadow-md mb-16">
+      <h3 className="text-2xl font-bold text-indigo-800 mb-4">
+        Leve seu negócio para o próximo nível.
+      </h3>
+      <p className="text-gray-700 mb-6">
+        Agende uma consultoria gratuita com nossos especialistas e descubra como podemos transformar sua operação.
+      </p>
+      <Link href="/contact" className="btn btn-primary">Agende uma Consultoria Gratuita</Link>
+    </div>
 
           {/* Service 1 */}
           <div className="flex flex-col md:flex-row gap-12 mb-20 items-center">
@@ -52,9 +59,10 @@ export default function Services() {
                 design de experiência do usuário.
               </p>
               <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
+                <li className="flex items-start border-b border-gray-100 pb-3 last:border-0">
                   <svg
-                    className="h-6 w-6 text-indigo-500 mr-2"
+                    role="presentation" aria-hidden="true"
+                    className="h-6 w-6 text-indigo-500 flex-shrink-0 mr-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -70,9 +78,10 @@ export default function Services() {
                     Aplicativos web e mobile de alta performance
                   </span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start border-b border-gray-100 pb-3 last:border-0">
                   <svg
-                    className="h-6 w-6 text-indigo-500 mr-2"
+                    role="presentation" aria-hidden="true"
+                    className="h-6 w-6 text-indigo-500 flex-shrink-0 mr-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -88,9 +97,10 @@ export default function Services() {
                     Plataformas e sistemas personalizados
                   </span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start border-b border-gray-100 pb-3 last:border-0">
                   <svg
-                    className="h-6 w-6 text-indigo-500 mr-2"
+                    role="presentation" aria-hidden="true"
+                    className="h-6 w-6 text-indigo-500 flex-shrink-0 mr-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -106,9 +116,10 @@ export default function Services() {
                     Interfaces intuitivas e atraentes
                   </span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start border-b border-gray-100 pb-3 last:border-0">
                   <svg
-                    className="h-6 w-6 text-indigo-500 mr-2"
+                    role="presentation" aria-hidden="true"
+                    className="h-6 w-6 text-indigo-500 flex-shrink-0 mr-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -131,9 +142,10 @@ export default function Services() {
             </div>
             <div className="flex-1 order-1 md:order-2">
               <div className="bg-gradient-to-br from-indigo-100 to-purple-100 p-6 rounded-lg">
-                <div className="bg-white rounded-lg shadow-xl p-8">
+                <div className="bg-white rounded-lg shadow-xl p-8 hover:shadow-lg hover:-translate-y-1 transform transition">
                   <div className="bg-indigo-100 text-indigo-600 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
                     <svg
+                      role="presentation" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-8 w-8"
                       fill="none"
@@ -165,9 +177,10 @@ export default function Services() {
           <div className="flex flex-col md:flex-row gap-12 mb-20 items-center">
             <div className="flex-1">
               <div className="bg-gradient-to-br from-indigo-100 to-purple-100 p-6 rounded-lg">
-                <div className="bg-white rounded-lg shadow-xl p-8">
+                <div className="bg-white rounded-lg shadow-xl p-8 hover:shadow-lg hover:-translate-y-1 transform transition">
                   <div className="bg-indigo-100 text-indigo-600 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
                     <svg
+                      role="presentation" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-8 w-8"
                       fill="none"
@@ -202,9 +215,10 @@ export default function Services() {
                 aumentando a produtividade da sua equipe.
               </p>
               <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
+                <li className="flex items-start border-b border-gray-100 pb-3 last:border-0">
                   <svg
-                    className="h-6 w-6 text-indigo-500 mr-2"
+                    role="presentation" aria-hidden="true"
+                    className="h-6 w-6 text-indigo-500 flex-shrink-0 mr-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -220,9 +234,10 @@ export default function Services() {
                     Integração entre sistemas legados e novas tecnologias
                   </span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start border-b border-gray-100 pb-3 last:border-0">
                   <svg
-                    className="h-6 w-6 text-indigo-500 mr-2"
+                    role="presentation" aria-hidden="true"
+                    className="h-6 w-6 text-indigo-500 flex-shrink-0 mr-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -238,9 +253,10 @@ export default function Services() {
                     APIs robustas e bem documentadas
                   </span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start border-b border-gray-100 pb-3 last:border-0">
                   <svg
-                    className="h-6 w-6 text-indigo-500 mr-2"
+                    role="presentation" aria-hidden="true"
+                    className="h-6 w-6 text-indigo-500 flex-shrink-0 mr-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -256,9 +272,10 @@ export default function Services() {
                     Automação de processos de negócio
                   </span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start border-b border-gray-100 pb-3 last:border-0">
                   <svg
-                    className="h-6 w-6 text-indigo-500 mr-2"
+                    role="presentation" aria-hidden="true"
+                    className="h-6 w-6 text-indigo-500 flex-shrink-0 mr-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -293,9 +310,10 @@ export default function Services() {
                 práticas em desenvolvimento e infraestrutura.
               </p>
               <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
+                <li className="flex items-start border-b border-gray-100 pb-3 last:border-0">
                   <svg
-                    className="h-6 w-6 text-indigo-500 mr-2"
+                    role="presentation" aria-hidden="true"
+                    className="h-6 w-6 text-indigo-500 flex-shrink-0 mr-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -311,9 +329,10 @@ export default function Services() {
                     Design de experiência do usuário (UX)
                   </span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start border-b border-gray-100 pb-3 last:border-0">
                   <svg
-                    className="h-6 w-6 text-indigo-500 mr-2"
+                    role="presentation" aria-hidden="true"
+                    className="h-6 w-6 text-indigo-500 flex-shrink-0 mr-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -329,9 +348,10 @@ export default function Services() {
                     Implementação de práticas DevOps
                   </span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start border-b border-gray-100 pb-3 last:border-0">
                   <svg
-                    className="h-6 w-6 text-indigo-500 mr-2"
+                    role="presentation" aria-hidden="true"
+                    className="h-6 w-6 text-indigo-500 flex-shrink-0 mr-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -347,9 +367,10 @@ export default function Services() {
                     Arquitetura de sistemas escaláveis
                   </span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start border-b border-gray-100 pb-3 last:border-0">
                   <svg
-                    className="h-6 w-6 text-indigo-500 mr-2"
+                    role="presentation" aria-hidden="true"
+                    className="h-6 w-6 text-indigo-500 flex-shrink-0 mr-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -372,9 +393,10 @@ export default function Services() {
             </div>
             <div className="flex-1 order-1 md:order-2">
               <div className="bg-gradient-to-br from-indigo-100 to-purple-100 p-6 rounded-lg">
-                <div className="bg-white rounded-lg shadow-xl p-8">
+                <div className="bg-white rounded-lg shadow-xl p-8 hover:shadow-lg hover:-translate-y-1 transform transition">
                   <div className="bg-indigo-100 text-indigo-600 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
                     <svg
+                      role="presentation" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-8 w-8"
                       fill="none"
