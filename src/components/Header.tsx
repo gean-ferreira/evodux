@@ -4,13 +4,7 @@ import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-
-const links = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'Sobre' },
-  { href: '/services', label: 'Serviços' },
-  { href: '/contact', label: 'Contato' },
-]
+import { NAVIGATION_DATA } from '@/utils/data/navigation.data'
 
 export default function Header() {
   const [open, setOpen] = useState(false)
@@ -56,7 +50,7 @@ export default function Header() {
 
         {/* nav desktop */}
         <nav className='hidden md:flex gap-8'>
-          {links.map(({ href, label }) => {
+          {NAVIGATION_DATA.map(({ href, label }) => {
             const isActive = pathname === href
 
             return (
