@@ -5,18 +5,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { motion } from 'framer-motion'
-import { CONTACT_INFO } from '@/constants/contact.const'
-
-const formSchema = z.object({
-  name: z.string().min(2, 'Nome muito curto').max(50, 'Nome muito longo'),
-  email: z.string().email('Email inválido'),
-  message: z
-    .string()
-    .min(10, 'Mensagem muito curta')
-    .max(500, 'Mensagem muito longa'),
-})
-
-type FormValues = z.infer<typeof formSchema>
+import { FAQ_DATA } from '@/utils/data/faq.data'
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -334,35 +323,33 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map Section */}
+      {/* FAQ Section */}
       <section className='bg-gray-50 py-16'>
         <div className='container'>
-          <div className='max-w-5xl mx-auto'>
-            <div className='bg-indigo-100 rounded-lg h-96 w-full flex items-center justify-center'>
-              <div className='text-center'>
-                <svg
-                  className='h-12 w-12 text-indigo-600 mx-auto mb-4'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'
-                  />
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'
-                  />
-                </svg>
-                <p className='text-indigo-800 text-lg font-medium'>
-                  Mapa da Localização
-                </p>
-              </div>
+          <div className='max-w-4xl mx-auto'>
+            <h2 className='text-3xl font-bold mb-12 text-center text-gray-900'>
+              Perguntas Frequentes
+            </h2>
+            <div className='space-y-6'>
+              {FAQ_DATA.map((item, index) => (
+                <div key={index} className='bg-white p-6 rounded-lg shadow-sm'>
+                  <h3 className='text-xl font-semibold mb-3 text-gray-900'>
+                    {item.question}
+                  </h3>
+                  <p className='text-gray-600'>{item.answer}</p>
+                </div>
+              ))}
+            </div>
+            <div className='mt-12 text-center'>
+              <p className='text-gray-600 mb-6'>
+                Não encontrou o que procurava? Entre em contato direto conosco!
+              </p>
+              <a
+                href={`mailto:${CONTACT_INFO.email}`}
+                className='btn btn-primary'
+              >
+                Enviar Email
+              </a>
             </div>
           </div>
         </div>
