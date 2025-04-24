@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
+import { CONTACT_INFO } from '@/constants/contact.const'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -59,8 +60,24 @@ export default function RootLayout({
                 <h3 className='text-lg font-semibold mb-4 text-indigo-400'>
                   Contato
                 </h3>
-                <p className='text-gray-400'>email@evodux.com</p>
-                <p className='text-gray-400'>(XX) XXXX-XXXX</p>
+                <p className='text-gray-400'>
+                  <a
+                    href={`mailto:${CONTACT_INFO.email}`}
+                    className='hover:text-indigo-300 transition-colors'
+                  >
+                    {CONTACT_INFO.email}
+                  </a>
+                </p>
+                <p className='text-gray-400'>
+                  <a
+                    href={`https://wa.me/${CONTACT_INFO.phone.replace(/\D/g, '')}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='hover:text-indigo-300 transition-colors'
+                  >
+                    {CONTACT_INFO.phone}
+                  </a>
+                </p>
               </div>
             </div>
             <div className='border-t border-gray-800 mt-8 pt-8 text-center text-gray-500'>
