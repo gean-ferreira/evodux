@@ -3,9 +3,9 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { z } from 'zod'
 import { motion } from 'framer-motion'
 import { FAQ_DATA } from '@/utils/data/faq.data'
+import { contactSchema, type FormValues } from '@/schemas/contact.schema'
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -18,7 +18,7 @@ export default function Contact() {
     reset,
     formState: { errors },
   } = useForm<FormValues>({
-    resolver: zodResolver(formSchema),
+    resolver: zodResolver(contactSchema),
   })
 
   const onSubmit = async (data: FormValues) => {
