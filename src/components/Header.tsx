@@ -1,43 +1,51 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
-import Link from 'next/link'
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const links = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'Sobre' },
-  { href: '/services', label: 'Serviços' },
-  { href: '/contact', label: 'Contato' },
-]
+  { href: "/", label: "Home" },
+  { href: "/about", label: "Sobre" },
+  { href: "/services", label: "Serviços" },
+  { href: "/contact", label: "Contato" },
+];
 
 export default function Header() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   const svgProps = {
-    viewBox: '0 0 24 24',
-    stroke: 'currentColor',
-    fill: 'none',
-    className: 'h-6 w-6',
+    viewBox: "0 0 24 24",
+    stroke: "currentColor",
+    fill: "none",
+    className: "h-6 w-6",
     strokeWidth: 2,
-    strokeLinecap: 'round',
-  }
+    strokeLinecap: "round",
+  };
 
   /* variantes para o painel */
   const panel = {
-    closed: { height: 0, opacity: 0, transition: { when: 'afterChildren' } },
+    closed: { height: 0, opacity: 0, transition: { when: "afterChildren" } },
     open: {
-      height: 'auto',
+      height: "auto",
       opacity: 1,
-      transition: { when: 'beforeChildren', staggerChildren: 0.05 },
+      transition: { when: "beforeChildren", staggerChildren: 0.05 },
     },
-  }
+  };
 
   /* variantes para cada item */
   const item = {
     closed: { y: -8, opacity: 0 },
     open: { y: 0, opacity: 1 },
-  }
+  };
+
+  /* variantes para os links */
+  const linkVariants = {
+    idle: { scale: 1 },
+    hover: { scale: 1.04, transition: { duration: 0.2 } },
+  };
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white/95 shadow-sm">
@@ -48,15 +56,46 @@ export default function Header() {
 
         {/* nav desktop */}
         <nav className="hidden md:flex gap-8">
-          {links.map(({ href, label }) => (
-            <Link key={href} href={href} className="text-gray-700 hover:text-indigo-600">
-              {label}
-            </Link>
-          ))}
+          {links.map(({ href, label }) => {
+            const isActive = pathname === href;
+
+            return (
+              <motion.div
+                key={href}
+                variants={linkVariants}
+                initial="idle"
+                whileHover={isActive ? "idle" : "hover"}
+                className="relative"
+              >
+                {isActive ? (
+                  <span className="text-indigo-600 font-medium cursor-default">
+                    {label}
+                    <motion.div
+                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-indigo-600"
+                      layoutId="activeIndicator"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.3 }}
+                    />
+                  </span>
+                ) : (
+                  <Link
+                    href={href}
+                    className="text-gray-700 hover:text-indigo-600 transition-colors duration-300"
+                  >
+                    {label}
+                  </Link>
+                )}
+              </motion.div>
+            );
+          })}
         </nav>
 
         {/* toggle */}
-        <button onClick={() => setOpen(!open)} className="md:hidden text-gray-700">
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden text-gray-700"
+        >
           <AnimatePresence initial={false} mode="wait">
             {open ? (
               <motion.svg
@@ -98,17 +137,41 @@ export default function Header() {
             variants={panel}
           >
             <ul className="flex flex-col px-6 py-4 text-gray-700">
-              {links.map(({ href, label }) => (
-                <motion.li key={href} variants={item} onClick={() => setOpen(false)}>
-                  <Link href={href} className="block py-2">
-                    {label}
-                  </Link>
-                </motion.li>
-              ))}
+              {links.map(({ href, label }) => {
+                const isActive = pathname === href;
+
+                return (
+                  <motion.li
+                    key={href}
+                    variants={item}
+                    onClick={() => setOpen(false)}
+                  >
+                    {isActive ? (
+                      <span className="block py-2 text-indigo-600 font-medium cursor-default relative inline-block">
+                        {label}
+                        <motion.div
+                          className="absolute -bottom-0.5 left-0 w-full h-0.5 bg-indigo-600"
+                          layoutId="mobileActiveIndicator"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          transition={{ duration: 0.3 }}
+                        />
+                      </span>
+                    ) : (
+                      <Link
+                        href={href}
+                        className="block py-2 transition-colors duration-300 hover:text-indigo-600"
+                      >
+                        {label}
+                      </Link>
+                    )}
+                  </motion.li>
+                );
+              })}
             </ul>
           </motion.nav>
         )}
       </AnimatePresence>
     </header>
-  )
+  );
 }
