@@ -457,10 +457,7 @@ export default function Services() {
             Entre em contato para uma avaliação personalizada das suas
             necessidades e descubra como podemos ajudar.
           </p>
-          <Link
-            href='/contact'
-            className='btn bg-white text-indigo-600 hover:bg-indigo-50 px-8 py-3'
-          >
+          <Link href='/contact' className='btn btn-white'>
             Fale Conosco
           </Link>
         </div>

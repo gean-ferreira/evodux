@@ -19,10 +19,7 @@ export default function Home() {
               <Link href='/contact' className='btn btn-primary'>
                 Fale Conosco
               </Link>
-              <Link
-                href='/services'
-                className='btn btn-secondary text-white border-white/20 hover:bg-white/10'
-              >
+              <Link href='/services' className='btn btn-secondary'>
                 Conheça Nossos Serviços
               </Link>
             </div>
@@ -198,10 +195,7 @@ export default function Home() {
             Entre em contato conosco hoje mesmo para discutir como podemos
             ajudar a transformar sua empresa com soluções digitais inovadoras.
           </p>
-          <Link
-            href='/contact'
-            className='btn bg-white text-indigo-600 hover:bg-indigo-50 px-8 py-3'
-          >
+          <Link href='/contact' className='btn btn-white'>
             Fale Conosco
           </Link>
         </div>

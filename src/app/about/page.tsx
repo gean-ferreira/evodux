@@ -205,15 +205,12 @@ export default function About() {
             digitais que impulsionem seu crescimento.
           </p>
           <div className='flex flex-col sm:flex-row gap-4 justify-center'>
-            <Link
-              href='/contact'
-              className='btn bg-white text-indigo-600 hover:bg-indigo-50 px-8 py-3'
-            >
+            <Link href='/contact' className='btn btn-white'>
               Entre em Contato
             </Link>
             <Link
               href='/services'
-              className='btn bg-transparent text-white border border-white hover:bg-white/10 px-8 py-3'
+              className='btn bg-transparent text-white border border-white h-10 hover:bg-white/10 px-8 py-3'
             >
               Conheça Nossos Serviços
             </Link>
