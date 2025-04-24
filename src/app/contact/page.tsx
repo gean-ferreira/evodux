@@ -240,7 +240,9 @@ export default function Contact() {
                       </label>
                       <input
                         id='email'
-                        type='email'
+                        type='text'
+                        inputMode='email'
+                        autoComplete='email'
                         className={`form-control ${
                           errors.email ? 'ring-red-500' : ''
                         }`}
