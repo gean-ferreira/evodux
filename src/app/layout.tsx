@@ -20,9 +20,6 @@ export const metadata: Metadata = {
     siteName: 'Evodux',
   },
   icons: {
-    icon: false,
-    shortcut: false,
-    apple: false,
     other: {
       rel: 'icon',
       url: 'data:,',

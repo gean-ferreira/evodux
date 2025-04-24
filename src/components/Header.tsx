@@ -16,7 +16,7 @@ export default function Header() {
     fill: 'none',
     className: 'h-6 w-6',
     strokeWidth: 2,
-    strokeLinecap: 'round',
+    strokeLinecap: 'round' as 'round' | 'inherit' | 'butt' | 'square',
   }
 
   /* variantes para o painel */
@@ -133,7 +133,7 @@ export default function Header() {
             variants={panel}
           >
             <ul className='flex flex-col px-6 py-4 text-gray-700'>
-              {links.map(({ href, label }) => {
+              {NAVIGATION_DATA.map(({ href, label }) => {
                 const isActive = pathname === href
 
                 return (
