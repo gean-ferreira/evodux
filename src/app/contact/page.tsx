@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { motion } from 'framer-motion'
+import { CONTACT_INFO } from '@/utils/constants/contact.const'
 import { FAQ_DATA } from '@/utils/data/faq.data'
 import { contactSchema, type FormValues } from '@/schemas/contact.schema'
 
