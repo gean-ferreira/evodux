@@ -18,19 +18,15 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     url: 'https://www.evodux.com.br/',
     siteName: 'Evodux',
-    images: [
-      {
-        url: 'https://www.evodux.com.br/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Evodux Soluções Digitais',
-      },
-    ],
   },
-  twitter: {
-    card: 'summary_large_image',
-    site: '@evodux',
-    creator: '@evodux',
+  icons: {
+    icon: false,
+    shortcut: false,
+    apple: false,
+    other: {
+      rel: 'icon',
+      url: 'data:,',
+    },
   },
 }
 
