@@ -81,10 +81,7 @@ export default function RootLayout({
               </div>
             </div>
             <div className='border-t border-gray-800 mt-8 pt-8 text-center text-gray-500'>
-              <p>
-                &copy; {new Date().getFullYear()} Evodux. Todos os direitos
-                reservados.
-              </p>
+              <p>&copy; 2025 Evodux. Todos os direitos reservados.</p>
             </div>
           </div>
         </footer>
