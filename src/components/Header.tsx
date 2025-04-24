@@ -72,10 +72,12 @@ export default function Header() {
                     {label}
                     <motion.div
                       className='absolute -bottom-1 left-0 right-0 h-0.5 bg-indigo-600'
-                      layoutId='activeIndicator'
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 0.3 }}
+                      initial={{ scaleX: 0 }}
+                      animate={{ scaleX: 1 }}
+                      transition={{
+                        duration: 0.2,
+                        ease: 'easeOut',
+                      }}
                     />
                   </span>
                 ) : (
@@ -151,10 +153,12 @@ export default function Header() {
                         {label}
                         <motion.div
                           className='absolute -bottom-0.5 left-0 w-full h-0.5 bg-indigo-600'
-                          layoutId='mobileActiveIndicator'
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          transition={{ duration: 0.3 }}
+                          initial={{ scaleX: 0 }}
+                          animate={{ scaleX: 1 }}
+                          transition={{
+                            duration: 0.2,
+                            ease: 'easeOut',
+                          }}
                         />
                       </span>
                     ) : (
