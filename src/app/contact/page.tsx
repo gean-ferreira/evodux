@@ -27,10 +27,18 @@ export default function Contact() {
     setIsError(false)
 
     try {
-      // Simulando envio do formulário
-      await new Promise((resolve) => setTimeout(resolve, 1500))
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
 
-      console.log('Form data:', data)
+      if (!response.ok) {
+        throw new Error('Erro ao enviar mensagem')
+      }
+
       setIsSuccess(true)
       reset()
     } catch (error) {
