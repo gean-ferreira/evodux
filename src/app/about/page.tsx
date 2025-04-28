@@ -61,7 +61,7 @@ export default function About() {
                 </Link>
               </div>
             </div>
-            <div className='flex-1'>
+            <div className='w-full md:flex-1'>
               <div className='relative h-96 w-full rounded-lg overflow-hidden shadow-2xl'>
                 <div className='absolute inset-0 bg-indigo-600 bg-opacity-90 flex items-center justify-center'>
                   <div className='text-white text-center p-8'>
