@@ -21,12 +21,6 @@ export const metadata: Metadata = {
     url: 'https://www.evodux.com.br/',
     siteName: 'Evodux',
   },
-  icons: {
-    other: {
-      rel: 'icon',
-      url: 'data:,',
-    },
-  },
 }
 
 export default function RootLayout({
