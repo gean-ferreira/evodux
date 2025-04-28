@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className='relative h-screen flex items-center bg-gradient-to-r from-indigo-900 to-purple-800'>
+      <section className='relative min-h-[calc(100vh-64px)] flex items-center bg-gradient-to-r from-indigo-900 to-purple-800'>
         <div className='absolute inset-0 bg-black opacity-40'></div>
         <div className='container relative z-10 mx-auto px-4 md:px-6 text-white'>
           <div className='max-w-3xl'>
