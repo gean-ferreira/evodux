@@ -43,7 +43,7 @@ export default function Home() {
                 digitais inovadoras com foco em eficiência, agilidade e
                 experiência do usuário.
               </p>
-              <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 gap-6 mb-8'>
+              <div className='grid xl:grid-cols-3 gap-6 mb-8'>
                 <div className='bg-indigo-50 p-6 rounded-lg'>
                   <h3 className='text-lg font-semibold text-indigo-700 mb-2'>
                     Inovação
@@ -73,10 +73,25 @@ export default function Home() {
                 Saiba Mais
               </Link>
             </div>
-            <div className='flex-1 order-1 md:order-2 hidden lg:block'>
+            <div className='flex-1 order-1 md:order-2 w-full'>
               <div className='relative h-80 md:h-96 w-full'>
                 <div className='absolute inset-0 bg-indigo-200 rounded-lg transform rotate-3'></div>
-                <div className='absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg'></div>
+                <div className='absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center'>
+                  <div className='text-white text-center p-6'>
+                    <h3 className='text-xl md:text-2xl font-bold mb-3'>
+                      Nossa Essência
+                    </h3>
+                    <p className='text-base md:text-lg mb-4'>
+                      Transformamos ideias em soluções que impulsionam o futuro
+                      digital
+                    </p>
+                    <div className='h-px w-20 bg-white/50 mx-auto mb-4'></div>
+                    <p className='text-sm md:text-base text-indigo-100 italic'>
+                      &ldquo;A inovação está no DNA de cada projeto que
+                      entregamos&rdquo;
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
